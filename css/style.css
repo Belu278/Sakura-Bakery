@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap");
+.footer-menu {
+  color: #ffd900 !important;
+  font-family: "IM Fell Double Pica SC", serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.footer-titulo {
+  color: #ffd900;
+  font-family: "IM Fell Double Pica SC", serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.tituloProductos {
+  color: #ff29ad;
+  text-align: center;
+  font-size: 70px;
+  font-family: "MonteCarlo", cursive;
+  padding: 4rem 0rem 0rem 0rem;
+  font-weight: 500;
+}
+
+.galeria {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem 8rem 2rem 8rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: .5rem;
+          column-gap: .5rem;
+  row-gap: .5rem;
+}
+
+.galeria .box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.galeria .box img {
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.galeria .box img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+@media screen and (max-width: 1024px) {
+  .galeria {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .galeria {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.frase1 {
+  color: #ff29ad;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'MonteCarlo', cursive;
+}
+
+.tienda {
+  height: 550px;
+  background-image: url(../Media/TiendaRegalo.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.tienda .container-text {
+  padding: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ff29ad;
+}
+
+.tienda .card-title {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: "MonteCarlo", cursive;
+  margin-top: 4rem;
+}
+
+.tienda .card-text {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-family: "IM Fell Double Pica SC", serif;
+}
+
+.tienda .btn-link {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  background-color: #ff29ad;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: "IM Fell Double Pica SC", serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 10px;
+  }
+}
+
+.tituloNuestros {
+  color: #ff29ad;
+  text-align: center;
+  font-size: 4rem;
+  padding: 50px 5px 5px 5px;
+  font-family: "MonteCarlo", cursive;
+}
+
+.fraseProducto {
+  color: #ff29ad;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "MonteCarlo", cursive;
+}
+
+.section {
+  width: 100%;
+  background-color: aliceblue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: .5rem;
+          column-gap: .5rem;
+  row-gap: .5rem;
+  padding: 1rem 8rem 2rem 8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .box {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5%;
+  border-radius: 10px;
+}
+
+.section .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section .box .hover {
+  width: 0%;
+  height: 50vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75)));
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  position: absolute;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.section .hover h5 {
+  color: aliceblue;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.section .box:hover .hover {
+  width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+  .section {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .section {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.nosotros {
+  height: 100vh;
+  position: relative;
+  background-image: url("../media/cupcakes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nosotros .quienesSomosTitulo {
+  color: #ff29ad;
+  text-align: center;
+  font-size: 4rem;
+  padding: 0px 0px 5px 05px;
+  font-family: "MonteCarlo", cursive;
+}
+
+.nosotros .nosotrosTitulo {
+  color: #ff29ad;
+  text-align: center;
+  font-size: 2rem;
+  padding: 30px 5px 5px 5px;
+  font-family: "MonteCarlo", cursive;
+  font-weight: 600;
+}
+
+.fraseNosotros {
+  color: #ff29ad;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "MonteCarlo", cursive;
+  padding-top: 3rem;
+}
+
+.tiendaRegalos {
+  height: 100vh;
+  position: relative;
+  background-image: url("../Media/fondotienda.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.fraseRegalo {
+  color: #ff29ad;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'MonteCarlo', cursive;
+}
+
+.tituloRegalo {
+  color: #ff29ad;
+  text-align: center;
+  font-size: 5rem;
+  padding: 30px 5px 5px 10px;
+  font-family: "MonteCarlo", cursive;
+}
+
+.tituloRegala {
+  color: #121212;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "IM Fell Double Pica SC", serif;
+  padding: 30px 5px 5px 10px;
+}
+
+.card-regalo {
+  border-radius: 30px;
+}
+
+.card-body1 {
+  font-family: "IM Fell Double Pica SC", serif;
+  text-align: center;
+  color: #ff29ad;
+}
+
+.tituloContacto {
+  color: #ff29ad;
+  text-align: center;
+  font-size: 5rem;
+  padding: 30px 5px 5px 10px;
+  font-family: "MonteCarlo", cursive;
+}
+
+.form-label {
+  color: #ff29ad;
+  text-align: center;
+  font-size: 2rem;
+  padding: 30px 5px 5px 10px;
+  font-family: "MonteCarlo", cursive;
+}
+
+.boton-cont {
+  border-radius: 20px;
+  background-color: #ff29ad;
+}
+
+.menu-nav li a {
+  color: #ffd900 !important;
+  font-family: "IM Fell Double Pica SC", serif;
+  font-size: 20px;
+  font-weight: 300;
+}

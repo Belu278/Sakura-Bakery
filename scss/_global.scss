@@ -1,0 +1,347 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		
+	}
+	body{
+		background-color: aliceblue;
+	}
+
+	//HOME
+	.tituloProductos{
+		color: #ff29ad;
+		text-align: center;
+		font-size: 70px;
+		font-family: $fuente-titulo;
+		padding: 4rem 0rem 0rem 0rem;
+		font-weight: 500;
+		}
+
+	//GALERIA HOME
+	.galeria{
+		width: 100%;
+		margin: 2rem 0;
+		padding: 1rem 8rem 2rem 8rem;
+		
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: .5rem;
+		row-gap: .5rem;
+		
+		.box{
+			width: 100%;
+			
+			overflow: hidden;
+			border-radius: 10px;
+			}
+		.box img{
+			width:100%;
+			transition: 1s;
+			border-radius: 10px;
+			}
+		.box img:hover{
+			transform: scale(1.3);
+			}
+		}	
+			
+		@media screen and (max-width: 1024px){
+			
+			.galeria{
+		
+				grid-template-columns: repeat(2, 1fr);
+			}	
+		}
+		@media screen and (max-width: 768px){
+			.galeria{
+		
+				grid-template-columns: repeat(1, 1fr);
+				
+		}
+		}
+ 
+		//HOME
+		.frase1{
+			color: $texto-primario;
+			width: 100%;
+			text-align: center;
+			font-size: 2rem;
+			font-family: 'MonteCarlo', cursive;
+			
+		}
+
+
+		//HOME
+		.tienda{
+			height: 550px;
+			background-image: url(../Media/TiendaRegalo.jpg);
+			background-position: center;
+			background-size: cover;
+			text-align: center;
+
+			.container-text{
+				padding: 0;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				color:$texto-primario;
+				
+				
+			}
+			.card-title{
+				font-size: 50px;
+				font-weight: 500;
+				margin-bottom: 20px;
+				font-family: $fuente-titulo;
+				margin-top: 4rem;
+			}
+			.card-text{
+				font-size: 20px;
+				font-weight: 300;
+				margin-bottom: 30px;
+				font-family: $fuente-texto;
+			}
+			.btn-link{
+				width: 150px;
+				display: block;
+				margin: 0 auto;
+				padding: 15px 0;
+				background-color: $texto-primario;
+				color: white;
+				text-decoration: none;
+				border-radius: 20px;
+				font-family: $fuente-texto;
+				font-size: 20px;
+			}
+		}
+
+			@media screen and (max-width: 768px){
+				.card-title{
+					font-size: 20px;
+						
+				}
+				.card-text{
+					font-size: 10px;
+				}
+			}
+
+		//PAGINA DE PRODUCTOS
+		.tituloNuestros{
+			color: $texto-primario;
+			text-align: center;
+			font-size: 4rem;
+			padding: 50px 5px 5px 5px; 
+			font-family: $fuente-titulo;
+		}
+			
+			.fraseProducto{
+				color: $texto-primario;
+				width: 100%;
+				text-align: center;
+				font-size: 2rem;
+				font-family: $fuente-titulo;
+			}
+		
+
+		
+			.section{
+				width: 100%;
+				background-color: aliceblue;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				column-gap: .5rem;
+				row-gap: .5rem;
+				padding: 1rem 8rem 2rem 8rem;
+				align-items: center;
+				
+					.box{
+						width: 100%;
+						height: 50vh;
+						text-align: center;
+						overflow: hidden;
+						position: relative;
+						margin: 1.5%;
+						border-radius: 10px;
+			}	
+		
+					.box img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+			}
+					.box .hover{
+						width: 0%;
+						height: 50vh;
+						background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12, 0.75));
+						position: absolute;
+						top: 0;
+						display: grid;
+						justify-content: center;
+						align-items: center;
+						overflow: hidden;
+						transition: .4s all;
+					}
+					.hover h5{
+						color: aliceblue;
+						text-shadow: 1px 1px 1px black;
+						font-size: 2.5em;
+						text-transform: uppercase;
+						
+					}
+					.box:hover .hover{
+						width: 100%;
+					}
+		}
+				
+		@media screen and (max-width: 1500px){
+			
+			.section{
+		
+				grid-template-columns: repeat(3, 1fr);
+			}	
+		}
+		@media screen and (max-width: 1300px){
+			
+			.section{
+		
+				grid-template-columns: repeat(3, 1fr);
+			}	
+		}
+		@media screen and (max-width: 1024px){
+			
+			.section{
+		
+				grid-template-columns: repeat(3, 1fr);
+			}	
+		}
+		@media screen and (max-width: 900px){
+			
+			.section{
+		
+				grid-template-columns: repeat(2, 1fr);
+			}	
+		}
+		
+		@media screen and (max-width: 768px){
+			.section{
+		
+				grid-template-columns: repeat(1, 1fr);
+				
+		}
+		}
+
+		// PAGINA NOSOTROS
+			
+			.nosotros{
+				height: 100vh;
+				position: relative;
+				background-image: url("../media/cupcakes.jpg");
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
+			
+				.quienesSomosTitulo{
+					color: $texto-primario;
+					text-align: center;        
+					font-size: 4rem;
+					padding: 0px 0px 5px 05px;     
+					font-family: $fuente-titulo;
+					
+				}	
+				.nosotrosTitulo{
+					color: $texto-primario;
+					text-align: center;        
+					font-size: 2rem;
+					padding: 30px 5px 5px 5px;     
+					font-family: $fuente-titulo;
+					font-weight: 600;
+					
+				}
+			}
+			.fraseNosotros{
+				color: $texto-primario;
+				text-align: center;
+				font-size: 2rem;
+				font-family: $fuente-titulo;
+				padding-top: 3rem;
+			}
+		
+			//PAGINA TIENDA DE REGALOS
+
+			.tiendaRegalos{
+				height: 100vh;
+				position: relative;
+				background-image: url("../Media/fondotienda.jpg");
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
+			}
+			.fraseRegalo{
+						color: $texto-primario;
+						width: 100%;
+						text-align: center;
+						font-size: 2rem;
+						font-family: 'MonteCarlo', cursive;
+					}
+					.tituloRegalo{
+						color: $texto-primario;
+						text-align: center;
+						font-size: 5rem;
+						padding: 30px 5px 5px 10px; 
+						font-family: $fuente-titulo;
+					}
+					.tituloRegala{
+						color: $secundario;
+						width: 100%;
+						text-align: center;
+						font-size: 2rem;
+						font-family: $fuente-texto;
+						padding: 30px 5px 5px 10px; 
+					}
+
+					.card-regalo{
+						border-radius: 30px;
+					}
+					.card-body1{
+						font-family: $fuente-texto;
+						text-align: center;
+						color: $texto-primario;
+						border-radius: 30px;
+					}
+
+
+				//PAGINA CONTACTO
+
+				.tituloContacto{
+					color: $texto-primario;
+						text-align: center;
+						font-size: 5rem;
+						padding: 30px 5px 5px 10px; 
+						font-family: $fuente-titulo;
+				}
+
+				.form-label{
+						color: $texto-primario;
+						text-align: center;
+						font-size: 2rem;
+						padding: 30px 5px 5px 10px; 
+						font-family: $fuente-titulo;
+				}
+
+				.boton-cont{
+					border-radius: 20px;
+					background-color: $texto-primario;
+				}
+				
+			
+
+		
+
+
+
